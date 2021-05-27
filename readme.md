@@ -22,7 +22,8 @@ module.exports = {
 ## 4 - Dans le package.json 
     ``"build": "postcss css/tailwind.css -o public/tailwind.css"``
 
-
+## 5 - Textension
+Tailwind CSS IntelliSense
 
 Pour ajouter @tilwind rule pour éviter le bug
 https://stackoverflow.com/questions/47607602/how-to-add-a-tailwind-css-rule-to-css-checker
