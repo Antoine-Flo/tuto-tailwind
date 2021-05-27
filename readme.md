@@ -5,24 +5,19 @@
 `npm init -y `<br>
 `npm install -D tailwindcss postcss-cli autoprefixer`<br>
 `npx tailwind init`<br>
+`npx tailwindcss init -p`
 
-## 2 - Créer 
-`postcss.config.js`
 
-## 3 - Y ajouter  
-```
-module.exports = {
-    plugins: [
-        require('tailwindcss'),
-        require('autoprefixer'),
-    ]
-}
-```
+## 2 - Dans le package.json 
+``"build": "postcss css/tailwind.css -o public/tailwind.css"``
 
-## 4 - Dans le package.json 
-    ``"build": "postcss css/tailwind.css -o public/tailwind.css"``
 
-## 5 - Textension
+## 3 - Purge
+Dans tailwind.config : './public/index.html',
+Run : $env:NODE_ENV="production",
+Run : npm run build
+
+## 4 - Textension
 Tailwind CSS IntelliSense
 
 Pour ajouter @tilwind rule pour éviter le bug
