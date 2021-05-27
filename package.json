@@ -4,7 +4,7 @@
   "description": "npm init -y \r npm install -D tailwindcss@latest postcss@latest autoprefixer@latest",
   "main": "index.js",
   "scripts": {
-    "build": "postcss -w css/tailwind.css -o public/style.css"
+    "build": "postcss -w src/tailwind.css -o public/style.css"
   },
   "keywords": [],
   "author": "",
